@@ -1,5 +1,5 @@
         document.getElementById('registerForm').addEventListener('submit', function(event) {
-            event.preventDefault();
+             event.preventDefault();
             var isValid = true;
 
             // Name validation
@@ -7,6 +7,7 @@
             if (name.length < 5) {
                 isValid = false;
                 document.getElementById('nameError').textContent = 'Name must be at least 5 characters long.';
+                // alert("not enough letters");
             } else {
                 document.getElementById('nameError').textContent = '';
             }
