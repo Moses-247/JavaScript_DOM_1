@@ -7,21 +7,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <form>
+  <div class="container mt-5">
+      <form id="registerForm">
         <div class="form-group">
-          <label for="exampleInputText">Name</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="textHelp" placeholder="Enter name">
+          <label for="Text">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+          <div class="error" id="nameError"></div>
         </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+        <div class="form-group"> 
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="password" required>
+          <div class="error" id="passwordError"></div>
         </div>
-        <div class="form-group">
-            <label for="exampleInputNumber">Phone Number</label>
-            <input type="number" class="form-control" id="exampleInputNumber" placeholder="Number">
+
+        <div class="form-group"> 
+          <label for="phone">Phone Number</label> 
+          <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number"> 
+          <div class="error" id="phoneError"></div>
         </div>
         
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+  </div>
+
+  <script src="js/main.js"></script>
+    
 </body>
 </html>
